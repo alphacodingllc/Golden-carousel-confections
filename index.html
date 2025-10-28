@@ -1,1 +1,103 @@
 
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Golden Carousel - Luxury Confections</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Manrope:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+      .font-serif { font-family: 'Playfair Display', serif; }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#D4AF37","background-light": "#FAFAFA",
+              "background-dark": "#0A0A0A","text-light": "#1a1a1a",
+              "text-dark": "#FFFFFF","accent": "#F4C2C2",},
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"],
+              "serif": ["Playfair Display", "serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-background-dark text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5">
+<div class="layout-content-container flex w-full max-w-5xl flex-1 flex-col px-4 sm:px-6 lg:px-8">
+<header class="flex items-center justify-between whitespace-nowrap px-4 py-5 sm:px-6">
+<div class="flex items-center gap-4">
+<h1 class="font-serif text-2xl font-bold tracking-tight text-primary">Golden Carousel</h1>
+</div>
+<div class="flex gap-2">
+<a class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-transparent text-text-dark/80 hover:bg-primary/20 hover:text-primary" href="#">
+<span class="material-symbols-outlined text-2xl">local_mall</span>
+</a>
+<a class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-transparent text-text-dark/80 hover:bg-primary/20 hover:text-primary" href="#">
+<span class="material-symbols-outlined text-2xl">mail</span>
+</a>
+</div>
+</header>
+<main class="flex flex-1 flex-col">
+<div class="@container">
+<div class="@[480px]:p-4">
+<div class="relative flex min-h-[560px] flex-col items-center justify-center gap-6 overflow-hidden bg-cover bg-center bg-no-repeat p-4 text-center @[480px]:gap-8 @[480px]:rounded-xl" data-alt="Stunning white chocolate confections with a granite look, artfully decorated with splashes of pink and gold food coloring." style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQYfOzYcSLkOujrowFyH8wGBFptWOq1hM9tWNPXLe6nc-1NFuT0dMDzWH0LbbmeVNjJgz-gcLLul_r4dHjpECvGmDmeEvkdntz4BPlbdyst9FWRwXZbrjtw7GKy_jHWN3cnuUu-x7aI293UeWNdWjpKyt7oJwfoBxROg5sM2YoIzff_V2pd3o4rSjLcVmH0PQYw6_LnE2GuenjIeGFE-BKqXrrgPsSUqDGJptdlJH5wubtXmO2njs-Et6lLS8BnKF44Fm0Txv5hwk");'>
+<div class="flex flex-col gap-2">
+<h2 class="font-serif text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">Artistry in Every Bite.</h2>
+<p class="text-base font-normal leading-normal text-white/90 sm:text-lg">Discover handcrafted luxury confections. Coming soon.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="@container">
+<div class="flex flex-col items-center justify-end gap-6 px-4 py-12 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
+<div class="flex max-w-2xl flex-col gap-2 text-center">
+<h3 class="font-serif text-3xl font-bold leading-tight text-text-dark @[480px]:text-4xl">Be the first to know.</h3>
+<p class="text-base font-normal leading-normal text-text-dark/80">Join our exclusive mailing list for launch news and special offers.</p>
+</div>
+<div class="flex w-full max-w-2xl flex-col items-center gap-4 sm:flex-row">
+<label class="w-full sm:flex-1">
+<span class="sr-only">Your Name</span>
+<input class="form-input h-14 w-full flex-1 rounded-lg border border-white/20 bg-black/30 px-4 text-base font-normal leading-normal text-text-dark placeholder:text-text-dark/50 focus:border-primary focus:ring-primary" placeholder="Your Name" type="text"/>
+</label>
+<label class="w-full sm:flex-1">
+<span class="sr-only">Your Email</span>
+<input class="form-input h-14 w-full flex-1 rounded-lg border border-white/20 bg-black/30 px-4 text-base font-normal leading-normal text-text-dark placeholder:text-text-dark/50 focus:border-primary focus:ring-primary" placeholder="Your Email" type="email"/>
+</label>
+<button class="h-14 w-full cursor-pointer items-center justify-center whitespace-nowrap rounded-lg bg-primary px-6 text-base font-bold text-black transition-transform duration-200 ease-in-out hover:scale-105 active:scale-100 sm:w-auto">
+<span>Join the Waitlist</span>
+</button>
+</div>
+<p class="pt-2 text-center text-sm font-normal leading-normal text-text-dark/60">By signing up you agree to our <a class="underline hover:text-primary" href="#">Privacy Policy.</a></p>
+</div>
+</div>
+</main>
+<footer class="flex flex-col items-center gap-6 px-5 py-10 text-center @container">
+<div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 @[480px]:flex-row">
+<a class="min-w-32 text-base font-normal leading-normal text-text-dark/70 hover:text-primary" href="#">Contact Us</a>
+<a class="min-w-32 text-base font-normal leading-normal text-text-dark/70 hover:text-primary" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-wrap justify-center gap-4">
+<a href="#">
+<img alt="Instagram logo" class="h-6 w-6 opacity-70 grayscale invert-0 transition-opacity hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzzt-3PZUtIos0x6g0qdaoZbtVC0-jjkkT4GIbmQtkPbvWoE1NUMNjde88aSOfMmUf-Q3gTw5VQWkt1h7mzXK76YYmWQM4AFqgP3A8r6maqIUgCgXw35SYrTc1PwlS7lKMgw6QINYvPzmoJDtVjP0JIfsC7V5NKq-h5tGrgeEYeQ4DnHLAuVrpar9_AtLcM6DHEM7Mko3NtyfTb63_NaowwOqfPp5rAj5EkKBUWV5YydUGZmnp3GVkFDYcmauzrjGWDFqzVO8r7Qc"/>
+</a>
+<a href="#">
+<img alt="Pinterest logo" class="h-6 w-6 opacity-70 grayscale invert-0 transition-opacity hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4f1FxCynmTDbIMiy-RVoaI4v5R1QPZ06uqQwi74Y-qLWyzTxdPbkcpOD7Z9V3GHANjCbDmvZk_n7KLtOFssIdus6UOZZIhtChu2iUsiFyDq1ukxCccYkEIRP9GZNHcBgEhlXCW_IdTeUcm4-NAr2bFfvdRlvWQUjUUQGJ7wKRKzC-Dd25kMa6zFFx-17DjbEy8_5wuLMkYlEXRodsvSbQWKRTiyoT-JP1sxIusnnsxdHe6iIxLKSBx0-orrlYGdxo_0X0lJRjsBc"/>
+</a>
+</div>
+<p class="text-base font-normal leading-normal text-text-dark/60">© 2024 Golden Carousel. All rights reserved.</p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>
